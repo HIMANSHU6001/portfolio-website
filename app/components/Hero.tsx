@@ -10,7 +10,7 @@ function scrollToSection(id: string) {
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative overflow-hidden pt-12 pb-24 md:pt-20 md:pb-32">
+    <section id="hero" className="relative overflow-hidden pt-20 pb-24 md:pt-20 md:pb-32">
       <div className="hidden md:block absolute top-24 right-8 md:right-24 animate-drift" aria-hidden>
         <Cloud size={140} />
       </div>

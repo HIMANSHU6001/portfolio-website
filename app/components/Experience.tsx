@@ -101,7 +101,7 @@ export default function Experience() {
 
           {/* Scroll-tracking icon */}
           <div
-            className="absolute left-4 md:left-1/2 z-10 pointer-events-none hidden md:flex"
+            className="absolute left-4 md:left-1/2 z-10 pointer-events-none flex"
             style={{
               top: `${progress * 100}%`,
               transform: "translate(-50%, -50%)",
