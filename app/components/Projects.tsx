@@ -36,7 +36,7 @@ const projects: Project[] = [
     id: "mediagent",
     title: "MediAgent",
     blurb:
-      "Architected an LLM-powered agentic system using MCP for dynamic tool discovery, multi-step reasoning, and email/Slack notifications. Developed an async FastAPI orchestration layer managing multi-turn chat sessions with automated tool-calling and persistent memory. Containerized the full stack (React, FastAPI, FastMCP) via Docker Compose with PostgreSQL persistence using asyncpg.",
+      "Architected an LLM-powered agentic system using MCP for dynamic tool discovery, multi-step reasoning, and email/Slack notifications. Developed an async FastAPI orchestration layer managing multi-turn chat sessions with tool-calling. Containerized the full stack (React, FastAPI, FastMCP) via Docker Compose.",
     stack: ["FastAPI", "FastMCP", "OpenAI API", "Resend", "Webhooks"],
     variant: "ai",
     accent: "#B8E6C6",
