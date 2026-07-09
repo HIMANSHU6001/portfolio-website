@@ -31,7 +31,7 @@ export default function Hero() {
         <div className="inline-flex mb-8 reveal">
           <span
             data-testid="hero-tag"
-            className="bg-[#B8E6C6] border-[2px] border-[#1C1917] rounded-full px-5 py-2 text-xs md:text-sm font-extrabold uppercase tracking-widest"
+            className="bg-[#B8E6C6] border-2 border-[#1C1917] rounded-full px-5 py-2 text-xs md:text-sm font-extrabold uppercase tracking-widest"
           >
             Fullstack Developer · NIT Rourkela
           </span>
@@ -98,9 +98,9 @@ export default function Hero() {
           <div className="relative flex justify-center lg:justify-end reveal">
             <div
               data-testid="hero-avatar-card"
-              className="relative bg-[#B8E6C6] border-[4px] border-[#1C1917] rounded-[2rem] p-4 shadow-[8px_8px_0_0_#1C1917] rotate-2 hover:rotate-0 transition-transform"
+              className="relative bg-[#B8E6C6] border-4 border-[#1C1917] rounded-4xl p-4 shadow-[8px_8px_0_0_#1C1917] rotate-2 hover:rotate-0 transition-transform"
             >
-              <div className="overflow-hidden rounded-[1.5rem]  bg-[#FBEEDC]">
+              <div className="overflow-hidden rounded-3xl  bg-[#FBEEDC]">
                 <Image
                   src="/images/cartoon_avatar.png"
                   alt="Himanshu Kaushik portrait"

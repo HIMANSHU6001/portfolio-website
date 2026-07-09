@@ -107,7 +107,7 @@ export default function Experience() {
               transform: "translate(-50%, -50%)",
             }}
           >
-            <RocketLaunch size={60} className="text-[#1C1917] rotate-[180deg]" />
+            <RocketLaunch size={60} className="text-[#1C1917] rotate-180" />
           </div>
 
           <div className="space-y-10">
@@ -134,7 +134,7 @@ export default function Experience() {
                   <ul className="space-y-2">
                     {item.points.map((point, pointIndex) => (
                       <li key={pointIndex} className="flex gap-2 text-[15px] font-medium text-[#1C1917] leading-snug">
-                        <span className="mt-1 w-2 h-2 rounded-full bg-[#1C1917] flex-shrink-0" />
+                        <span className="mt-1 w-2 h-2 rounded-full bg-[#1C1917] shrink-0" />
                         <span>{point}</span>
                       </li>
                     ))}

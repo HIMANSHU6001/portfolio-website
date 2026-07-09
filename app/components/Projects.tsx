@@ -62,7 +62,7 @@ const projects: Project[] = [
     id: "yogurt",
     title: "Project Yogurt",
     blurb:
-      "Contributed to the core architecture of an open-source distributed task queue. Engineered and shipped critical worker-node bug fixes, optimizing memory utilization by 30% after rigorous code review by core maintainers.",
+      "Contributed and lead the development of project yougurt, the official website for HACKNITR7.0 - India's largest student run hackathon of east india with 4000+ registrations",
     stack: ["Python", "Celery", "Redis"],
     variant: "api",
     accent: "#E5D4FF",
@@ -83,7 +83,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
       className="sticker bg-[#FFF6E9] border-4 border-[#1C1917] rounded-4xl overflow-hidden flex flex-col"
       style={{ transform: `rotate(${rotation})` }}
     >
-      <div className="border-b-4 border-[#1C1917] relative aspect-[16/9]">
+      <div className="border-b-4 border-[#1C1917] relative aspect-video">
         {project.image ? (
           <Image src={project.image} alt={project.title} fill className="object-cover" />
         ) : (
