@@ -1,12 +1,5 @@
 import { CoffeeCup, Plant, Star } from "./Illustrations";
 
-const facts = [
-    // { k: "NIT-R", v: "B.Tech" },
-    // { k: "3+", v: "shipped systems" },
-    // { k: "AI", v: "agents & tools" },
-    // { k: "24/7", v: "curiosity mode" },
-] as const;
-
 const focusAreas = [
     "System Design",
     "Full-Stack & AI Development",
@@ -82,23 +75,6 @@ export default function About() {
                                     );
                                 })}
                             </div>
-                        </div>
-
-                        <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4">
-                            {facts.map((fact, index) => {
-                                const colors = ["#FDE68A", "#B8E6C6", "#F7C6D9", "#FFF6E9"];
-                                return (
-                                    <div
-                                        key={fact.v}
-                                        data-testid={`about-fact-${index}`}
-                                        className="sticker-sm border-[3px] border-[#1C1917] rounded-2xl p-4"
-                                        style={{ background: colors[index % colors.length] }}
-                                    >
-                                        <p className="font-display font-black text-2xl leading-none">{fact.k}</p>
-                                        <p className="text-xs font-bold uppercase tracking-wider mt-2 text-[#44403C]">{fact.v}</p>
-                                    </div>
-                                );
-                            })}
                         </div>
                     </div>
                 </div>
