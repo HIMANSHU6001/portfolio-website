@@ -2,15 +2,21 @@
 @import "tailwindcss";
 
 :root {
-  --ink: #1c1917;
-  --paper: #fbeedc;
-  --cream: #fff6e9;
-  --mint: #b8e6c6;
-  --pink: #f7c6d9;
-  --sun: #fde68a;
-  --peach-surface: #fff1df;
+  --ink: #1e293b;
+  --paper: #fefaf0;
+  --cream: #ffffff;
+  --mint: #E4D6A9;
+  --mint-dark: #827148;
+  --pink: #E8A07C;
+  --sun: #fbbf24;
+  --peach-surface: #fffbeb;
+  --baby-blue: #60a5fa;
+  --peach-pastel: #E8A07C;
+  --lavender: #a78bfa;
   --background: var(--paper);
   --foreground: var(--ink);
+
+
 }
 
 @theme inline {
@@ -19,6 +25,16 @@
   --font-sans: var(--font-fraunces);
   --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   --font-inter: "Inter", sans-serif;
+  --color-mint: var(--mint);
+  --color-mint-dark: var(--mint-dark);
+  --color-pink: var(--pink);
+  --color-sun: var(--sun);
+  --color-cream: var(--cream);
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-baby-blue: var(--baby-blue);
+  --color-peach-pastel: var(--peach-pastel);
+  --color-lavender: var(--lavender);
 }
 
 html {
@@ -28,9 +44,9 @@ html {
 body {
   min-height: 100vh;
   background-image:
-    radial-gradient(circle at 12% 18%, rgba(184, 230, 198, 0.35) 0, transparent 240px),
-    radial-gradient(circle at 88% 8%, rgba(247, 198, 217, 0.35) 0, transparent 260px),
-    radial-gradient(circle at 78% 92%, rgba(253, 230, 138, 0.3) 0, transparent 300px);
+    radial-gradient(circle at 12% 18%, color-mix(in srgb, var(--mint) 35%, transparent) 0, transparent 240px),
+    radial-gradient(circle at 88% 8%, color-mix(in srgb, var(--pink) 35%, transparent) 0, transparent 260px),
+    radial-gradient(circle at 78% 92%, color-mix(in srgb, var(--sun) 30%, transparent) 0, transparent 300px);
   background-attachment: fixed;
   background-color: var(--paper);
   color: var(--ink);

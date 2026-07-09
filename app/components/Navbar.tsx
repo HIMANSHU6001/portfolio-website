@@ -43,7 +43,7 @@ export default function Navbar() {
           onClick={() => scrollToSection("hero")}
           className="font-display text-lg font-black pr-3 border-r-2 border-[#1C1917] mr-2 cursor-pointer"
         >
-          HK<span className="text-[#7FC69C]">*</span>
+          HK<span className="text-mint-dark">*</span>
         </button>
         <div className="flex items-center gap-0.5">
           {links.map((link) => (
@@ -79,13 +79,13 @@ export default function Navbar() {
           onClick={() => scrollToSection("hero")}
           className="font-display text-base font-black"
         >
-          HK<span className="text-[#7FC69C]">*</span>
+          HK<span className="text-mint-dark">*</span>
         </button>
         <button
           data-testid="nav-toggle"
           type="button"
           onClick={() => setOpen((current) => !current)}
-          className="w-8 h-8 rounded-full bg-[#B8E6C6] border-2 border-[#1C1917] flex items-center justify-center"
+          className="w-8 h-8 rounded-full bg-mint border-2 border-[#1C1917] flex items-center justify-center"
           aria-label="Toggle menu"
           aria-expanded={open}
         >

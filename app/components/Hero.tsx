@@ -15,13 +15,13 @@ export default function Hero() {
         <Cloud size={140} />
       </div>
       <div className="hidden md:block absolute top-52 right-40 md:right-72 animate-drift" style={{ animationDelay: "2s" }} aria-hidden>
-        <Cloud size={90} fill="#FFF6E9" />
+        <Cloud size={90} fill="var(--cream)" />
       </div>
       <div className="hidden md:block absolute top-40 left-6 md:left-16 animate-twinkle" aria-hidden>
         <Star size={44} />
       </div>
       <div className="hidden md:block absolute bottom-16 left-1/3 animate-twinkle" style={{ animationDelay: "1.2s" }} aria-hidden>
-        <Star size={28} fill="#F7C6D9" />
+        <Star size={28} fill="var(--pink)" />
       </div>
       <div className="absolute top-16 left-1/2 hidden md:block animate-bob" aria-hidden>
         <Sun size={70} />
@@ -31,7 +31,7 @@ export default function Hero() {
         <div className="inline-flex mb-8 reveal">
           <span
             data-testid="hero-tag"
-            className="bg-[#B8E6C6] border-2 border-[#1C1917] rounded-full px-5 py-2 text-xs md:text-sm font-extrabold uppercase tracking-widest"
+            className="bg-mint border-2 border-[#1C1917] rounded-full px-5 py-2 text-xs md:text-sm font-extrabold uppercase tracking-widest"
           >
             Fullstack Developer · NIT Rourkela
           </span>
@@ -63,7 +63,7 @@ export default function Hero() {
                 data-testid="hero-cta-work"
                 type="button"
                 onClick={() => scrollToSection("contact")}
-                className="press sticker inline-flex items-center gap-2 bg-[#B8E6C6] border-[3px] border-[#1C1917] rounded-full px-7 py-3.5 font-extrabold text-sm uppercase tracking-wider"
+                className="press sticker inline-flex items-center gap-2 bg-mint border-[3px] border-[#1C1917] rounded-full px-7 py-3.5 font-extrabold text-sm uppercase tracking-wider"
               >
                 Work with me <ArrowRight size={18} />
               </button>
@@ -71,7 +71,7 @@ export default function Hero() {
                 data-testid="hero-cta-projects"
                 type="button"
                 onClick={() => scrollToSection("projects")}
-                className="press sticker inline-flex items-center gap-2 bg-[#FFF6E9] border-[3px] border-[#1C1917] rounded-full px-7 py-3.5 font-extrabold text-sm uppercase tracking-wider"
+                className="press sticker inline-flex items-center gap-2 bg-cream border-[3px] border-[#1C1917] rounded-full px-7 py-3.5 font-extrabold text-sm uppercase tracking-wider"
               >
                 See projects
               </button>
@@ -80,9 +80,9 @@ export default function Hero() {
             <div className="mt-10 flex items-center gap-6 flex-wrap">
               <div className="flex items-center gap-3">
                 <div className="flex -space-x-2">
-                  <div className="w-8 h-8 rounded-full bg-[#F7C6D9] border-2 border-[#1C1917]" />
-                  <div className="w-8 h-8 rounded-full bg-[#B8E6C6] border-2 border-[#1C1917]" />
-                  <div className="w-8 h-8 rounded-full bg-[#FDE68A] border-2 border-[#1C1917]" />
+                  <div className="w-8 h-8 rounded-full bg-pink border-2 border-[#1C1917]" />
+                  <div className="w-8 h-8 rounded-full bg-mint border-2 border-[#1C1917]" />
+                  <div className="w-8 h-8 rounded-full bg-sun border-2 border-[#1C1917]" />
                 </div>
                 <p className="text-sm font-semibold text-[#44403C]">
                   <span className="text-[#1C1917] font-extrabold">Systems + AI</span> engineer
@@ -98,11 +98,11 @@ export default function Hero() {
           <div className="relative flex justify-center lg:justify-end reveal">
             <div
               data-testid="hero-avatar-card"
-              className="relative bg-[#B8E6C6] border-4 border-[#1C1917] rounded-4xl p-4 shadow-[8px_8px_0_0_#1C1917] rotate-2 hover:rotate-0 transition-transform"
+              className="relative bg-mint border-4 border-[#1C1917] rounded-4xl p-4 shadow-[8px_8px_0_0_#1C1917] rotate-2 hover:rotate-0 transition-transform"
             >
               <div className="overflow-hidden rounded-3xl  bg-[#FBEEDC]">
                 <Image
-                  src="/images/cartoon_avatar.png"
+                  src="/images/cartoon_avatar2.png"
                   alt="Himanshu Kaushik portrait"
                   width={1024}
                   height={1024}
@@ -110,7 +110,7 @@ export default function Hero() {
                   className="h-auto w-full max-w-[320px]"
                 />
               </div>
-              <div className="absolute -top-4 -left-6 rotate-[-8deg] bg-[#FDE68A] border-[3px] border-[#1C1917] rounded-full px-4 py-1.5 shadow-[3px_3px_0_0_#1C1917]">
+              <div className="absolute -top-4 -left-6 rotate-[-8deg] bg-sun border-[3px] border-[#1C1917] rounded-full px-4 py-1.5 shadow-[3px_3px_0_0_#1C1917]">
                 <span className="font-display font-black text-sm">hello!</span>
               </div>
               <div className="mt-3 flex items-center justify-between gap-4">
@@ -119,7 +119,7 @@ export default function Hero() {
                   <p className="text-xs font-semibold text-[#44403C] mt-1">NIT Rourkela · IST</p>
                 </div>
                 <span className="inline-flex items-center gap-1.5 text-xs font-bold">
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#7FC69C] border border-[#1C1917]" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-mint-dark border border-[#1C1917]" />
                   Available
                 </span>
               </div>

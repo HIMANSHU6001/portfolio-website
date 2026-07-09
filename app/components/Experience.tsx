@@ -39,7 +39,7 @@ const timeline: TimelineItem[] = [
     company: "Soundpark",
     period: "May 2025 — Sep 2025",
     place: "Remote",
-    color: "#F7C6D9",
+    color: "var(--pink)",
     points: [
       "Implemented PWA features using Next.js, enabling offline access and native app-like experience for mobile users.",
       "Reduced redundant re-renders by refactoring Zustand state slices and API caching.",
@@ -51,7 +51,7 @@ const timeline: TimelineItem[] = [
     company: "Atlan",
     period: "Nov 2025 — Feb 2026",
     place: "Remote",
-    color: "#B8E6C6",
+    color: "var(--mint)",
     points: [
       "Engineered observability features for Automation Engine Studio for 100+ enterprise users.",
       "Reduced REST API calls by 50% via React Query caching, cutting workflow builder load times by 35%.",
@@ -83,10 +83,10 @@ export default function Experience() {
   }, []);
 
   return (
-    <section id="experience" className="relative py-24 md:py-32 bg-[#FFF6E9] border-y-4 border-[#1C1917]">
+    <section id="experience" className="relative py-24 md:py-32 bg-cream border-y-4 border-[#1C1917]">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <div className="flex items-end gap-4 mb-10">
-          <span className="bg-[#F7C6D9] border-[3px] font-inter border-[#1C1917] rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_#1C1917]">
+          <span className="bg-pink border-[3px] font-inter border-[#1C1917] rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_#1C1917]">
             04 · The road so far
           </span>
           <div className="hidden md:block flex-1 h-0.75 bg-[#1C1917] opacity-20 rounded-full" />
@@ -119,7 +119,7 @@ export default function Experience() {
                   }`}
               >
                 <div
-                  className={`sticker bg-[#FFF6E9] border-4 border-[#1C1917] rounded-2xl p-6 ${index % 2 === 0 ? "md:mr-8" : "md:ml-8 md:col-start-2"
+                  className={`sticker bg-cream border-4 border-[#1C1917] rounded-2xl p-6 ${index % 2 === 0 ? "md:mr-8" : "md:ml-8 md:col-start-2"
                     }`}
                   style={{ background: item.color }}
                 >

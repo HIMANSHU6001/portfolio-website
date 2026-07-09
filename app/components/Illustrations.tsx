@@ -24,7 +24,7 @@ export function Cloud({ className = "", fill = "#FFFFFF", size = 100 }: ColorPro
     );
 }
 
-export function Star({ className = "", fill = "#FDE68A", size = 60 }: ColorProps) {
+export function Star({ className = "", fill = "var(--sun)", size = 60 }: ColorProps) {
     return (
         <svg viewBox="0 0 40 40" width={size} className={className} xmlns="http://www.w3.org/2000/svg">
             <path
@@ -49,7 +49,7 @@ export function Squiggle({ className = "", color = INK, size = 80 }: ColorProps)
 export function Sun({ className = "", size = 100 }: SvgProps) {
     return (
         <svg viewBox="0 0 100 100" width={size} className={className} xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="22" fill="#FDE68A" stroke={INK} strokeWidth="3" />
+            <circle cx="50" cy="50" r="22" fill="var(--sun)" stroke={INK} strokeWidth="3" />
             {[0, 45, 90, 135, 180, 225, 270, 315].map((deg) => (
                 <line
                     key={deg}
@@ -70,7 +70,7 @@ export function Sun({ className = "", size = 100 }: SvgProps) {
 export function CoffeeCup({ className = "", size = 100 }: SvgProps) {
     return (
         <svg viewBox="0 0 100 100" width={size} className={className} xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 82 Q20 92 30 92 L62 92 Q72 92 72 82 L72 40 L20 40 Z" fill="#F7C6D9" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+            <path d="M20 82 Q20 92 30 92 L62 92 Q72 92 72 82 L72 40 L20 40 Z" fill="var(--pink)" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
             <rect x="20" y="34" width="52" height="10" rx="3" fill="#FFFFFF" stroke={INK} strokeWidth="3" />
             <path d="M72 50 Q86 50 86 62 Q86 74 72 74" fill="none" stroke={INK} strokeWidth="3" />
             <path d="M34 22 Q30 16 34 10 Q38 4 34 -2" fill="none" stroke={INK} strokeWidth="3" strokeLinecap="round" transform="translate(0 12)" />
@@ -82,10 +82,10 @@ export function CoffeeCup({ className = "", size = 100 }: SvgProps) {
 export function Plant({ className = "", size = 90 }: SvgProps) {
     return (
         <svg viewBox="0 0 80 100" width={size} className={className} xmlns="http://www.w3.org/2000/svg">
-            <path d="M40 60 Q10 40 18 20 Q30 30 40 55" fill="#B8E6C6" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
-            <path d="M40 60 Q70 40 62 20 Q50 30 40 55" fill="#7FC69C" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+            <path d="M40 60 Q10 40 18 20 Q30 30 40 55" fill="var(--mint)" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+            <path d="M40 60 Q70 40 62 20 Q50 30 40 55" fill="var(--mint-dark)" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
             <path d="M40 62 L40 30" stroke={INK} strokeWidth="2" fill="none" />
-            <path d="M22 68 L58 68 L54 92 Q54 96 50 96 L30 96 Q26 96 26 92 Z" fill="#F7C6D9" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+            <path d="M22 68 L58 68 L54 92 Q54 96 50 96 L30 96 Q26 96 26 92 Z" fill="var(--pink)" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
         </svg>
     );
 }
@@ -94,10 +94,10 @@ export function RocketLaunch({ className = "", size = 120 }: SvgProps) {
     return (
         <svg viewBox="0 0 100 120" width={size} className={className} xmlns="http://www.w3.org/2000/svg">
             <path d="M50 6 Q70 30 70 60 L70 78 L30 78 L30 60 Q30 30 50 6 Z" fill="#FFFFFF" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
-            <circle cx="50" cy="46" r="8" fill="#B8E6C6" stroke={INK} strokeWidth="3" />
-            <path d="M30 60 L14 74 L28 74 L30 78 Z" fill="#F7C6D9" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
-            <path d="M70 60 L86 74 L72 74 L70 78 Z" fill="#F7C6D9" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
-            <path d="M40 78 Q50 108 60 78" fill="#FDE68A" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+            <circle cx="50" cy="46" r="8" fill="var(--mint)" stroke={INK} strokeWidth="3" />
+            <path d="M30 60 L14 74 L28 74 L30 78 Z" fill="var(--pink)" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+            <path d="M70 60 L86 74 L72 74 L70 78 Z" fill="var(--pink)" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+            <path d="M40 78 Q50 108 60 78" fill="var(--sun)" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
         </svg>
     );
 }
@@ -105,8 +105,8 @@ export function RocketLaunch({ className = "", size = 120 }: SvgProps) {
 export function Avatar({ className = "", size = 240 }: SvgProps) {
     return (
         <svg viewBox="0 0 200 200" width={size} className={className} xmlns="http://www.w3.org/2000/svg">
-            <circle cx="100" cy="100" r="94" fill="#F7C6D9" stroke={INK} strokeWidth="4" />
-            <path d="M40 190 Q40 140 100 140 Q160 140 160 190" fill="#B8E6C6" stroke={INK} strokeWidth="4" strokeLinejoin="round" />
+            <circle cx="100" cy="100" r="94" fill="var(--pink)" stroke={INK} strokeWidth="4" />
+            <path d="M40 190 Q40 140 100 140 Q160 140 160 190" fill="var(--mint)" stroke={INK} strokeWidth="4" strokeLinejoin="round" />
             <rect x="88" y="118" width="24" height="24" fill="#FDD9B5" stroke={INK} strokeWidth="4" />
             <ellipse cx="100" cy="90" rx="40" ry="42" fill="#FDD9B5" stroke={INK} strokeWidth="4" />
             <path d="M60 82 Q56 44 100 44 Q144 44 140 82 Q132 66 100 66 Q78 66 60 82 Z" fill="#1C1917" stroke={INK} strokeWidth="4" strokeLinejoin="round" />
@@ -124,12 +124,12 @@ export function Avatar({ className = "", size = 240 }: SvgProps) {
 
 export function ProjectThumb({ variant = "app", className = "" }: SvgProps & { variant?: "app" | "api" | "ai" | "ecom" | "dash" | "cli" }) {
     const bgs = {
-        app: "#B8E6C6",
-        api: "#F7C6D9",
-        ai: "#FDE68A",
-        ecom: "#C4E4FF",
-        dash: "#FFD6A5",
-        cli: "#E5D4FF",
+        app: "var(--mint)",
+        api: "var(--pink)",
+        ai: "var(--sun)",
+        ecom: "var(--baby-blue)",
+        dash: "var(--peach-pastel)",
+        cli: "var(--lavender)",
     } as const;
 
     const bg = bgs[variant] ?? bgs.app;
@@ -137,15 +137,15 @@ export function ProjectThumb({ variant = "app", className = "" }: SvgProps & { v
     return (
         <svg viewBox="0 0 300 180" className={className} xmlns="http://www.w3.org/2000/svg">
             <rect x="0" y="0" width="300" height="180" fill={bg} />
-            <rect x="24" y="24" width="252" height="132" rx="10" fill="#FFF6E9" stroke={INK} strokeWidth="3" />
-            <circle cx="40" cy="40" r="4" fill="#F7C6D9" stroke={INK} strokeWidth="2" />
-            <circle cx="54" cy="40" r="4" fill="#FDE68A" stroke={INK} strokeWidth="2" />
-            <circle cx="68" cy="40" r="4" fill="#B8E6C6" stroke={INK} strokeWidth="2" />
+            <rect x="24" y="24" width="252" height="132" rx="10" fill="var(--cream)" stroke={INK} strokeWidth="3" />
+            <circle cx="40" cy="40" r="4" fill="var(--pink)" stroke={INK} strokeWidth="2" />
+            <circle cx="54" cy="40" r="4" fill="var(--sun)" stroke={INK} strokeWidth="2" />
+            <circle cx="68" cy="40" r="4" fill="var(--mint)" stroke={INK} strokeWidth="2" />
             <rect x="40" y="60" width="120" height="10" rx="4" fill={INK} />
             <rect x="40" y="78" width="200" height="6" rx="3" fill="#1C1917" opacity="0.4" />
             <rect x="40" y="90" width="180" height="6" rx="3" fill="#1C1917" opacity="0.4" />
-            <rect x="40" y="110" width="72" height="28" rx="14" fill="#F7C6D9" stroke={INK} strokeWidth="3" />
-            <rect x="122" y="110" width="72" height="28" rx="14" fill="#B8E6C6" stroke={INK} strokeWidth="3" />
+            <rect x="40" y="110" width="72" height="28" rx="14" fill="var(--pink)" stroke={INK} strokeWidth="3" />
+            <rect x="122" y="110" width="72" height="28" rx="14" fill="var(--mint)" stroke={INK} strokeWidth="3" />
         </svg>
     );
 }

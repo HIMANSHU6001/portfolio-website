@@ -14,7 +14,7 @@ export default function About() {
         <section id="about" className="relative py-24 md:py-32">
             <div className="max-w-6xl mx-auto px-6 md:px-10">
                 <div className="flex items-end gap-4 mb-10 reveal">
-                    <span className="bg-[#F7C6D9] border-[3px] font-inter border-[#1C1917] rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_#1C1917]">
+                    <span className="bg-pink border-[3px] font-inter border-[#1C1917] rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_#1C1917]">
                         01 · About
                     </span>
                     <div className="hidden md:block flex-1 h-0.75 bg-[#1C1917] opacity-20 rounded-full" />
@@ -22,7 +22,7 @@ export default function About() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-12 items-start">
                     <div className="relative reveal">
-                        <div className="bg-[#B8E6C6] border-4 border-[#1C1917] rounded-4xl p-8 shadow-[8px_8px_0_0_#1C1917] -rotate-2">
+                        <div className="bg-mint border-4 border-[#1C1917] rounded-4xl p-8 shadow-[8px_8px_0_0_#1C1917] -rotate-2">
                             <div className="flex justify-center py-4">
                                 <CoffeeCup size={120} />
                             </div>
@@ -34,7 +34,7 @@ export default function About() {
                             </p>
                         </div>
                         <div className="absolute -top-6 -right-6 rotate-12 hidden md:block">
-                            <Star size={54} fill="#FDE68A" />
+                            <Star size={54} fill="var(--sun)" />
                         </div>
                         <div className="absolute -bottom-8 -left-4 -rotate-6 hidden md:block">
                             <Plant size={110} />
@@ -62,7 +62,7 @@ export default function About() {
                             <p className="text-xs font-extrabold uppercase tracking-widest text-[#44403C] mb-3">Focus areas</p>
                             <div className="flex flex-wrap gap-2">
                                 {focusAreas.map((focusArea, index) => {
-                                    const colors = ["#B8E6C6", "#F7C6D9", "#FDE68A", "#FFF6E9", "#C4E4FF", "#FFD6A5"];
+                                    const colors = ["var(--mint)", "var(--pink)", "var(--sun)", "var(--cream)", "var(--baby-blue)", "var(--peach-pastel)"];
                                     return (
                                         <span
                                             key={focusArea}

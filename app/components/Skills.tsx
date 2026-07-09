@@ -54,7 +54,7 @@ const rows: SkillRow[] = [
     {
         id: "row1",
         speed: 34,
-        bg: "#B8E6C6",
+        bg: "var(--mint)",
         items: [
             { label: "Python", icon: SiPython, color: "#3776AB" },
             { label: "TypeScript", icon: SiTypescript, color: "#3178C6" },
@@ -71,7 +71,7 @@ const rows: SkillRow[] = [
     {
         id: "row2",
         speed: 48,
-        bg: "#F7C6D9",
+        bg: "var(--pink)",
         reverse: true,
         items: [
             { label: "Node.js", icon: SiNodedotjs, color: "#339933" },
@@ -88,7 +88,7 @@ const rows: SkillRow[] = [
     {
         id: "row3",
         speed: 62,
-        bg: "#FDE68A",
+        bg: "var(--sun)",
         items: [
             { label: "Threejs", icon: SiThreedotjs, color: "#00A3E0" },
             { label: "GCP", icon: SiGooglecloud, color: "#4285F4" },
@@ -106,7 +106,7 @@ const rows: SkillRow[] = [
 
 function Chip({ label, icon: Icon, color }: SkillChip) {
     return (
-        <span className="inline-flex items-center gap-2 bg-[#FFF6E9] border-[2.5px] border-[#1C1917] rounded-full px-5 py-2 text-sm md:text-base font-bold shadow-[2px_2px_0_0_#1C1917] whitespace-nowrap">
+        <span className="inline-flex items-center gap-2 bg-cream border-[2.5px] border-[#1C1917] rounded-full px-5 py-2 text-sm md:text-base font-bold shadow-[2px_2px_0_0_#1C1917] whitespace-nowrap">
             <Icon size={18} style={{ color }} className="shrink-0" />
             {label}
         </span>
@@ -115,10 +115,10 @@ function Chip({ label, icon: Icon, color }: SkillChip) {
 
 export default function Skills() {
     return (
-        <section id="skills" className="relative py-24 md:py-32 bg-[#FFF6E9] border-y-4 border-[#1C1917] overflow-hidden">
+        <section id="skills" className="relative py-24 md:py-32 bg-cream border-y-4 border-[#1C1917] overflow-hidden">
             <div className="max-w-6xl mx-auto px-6 md:px-10 mb-12">
                 <div className="flex items-end gap-4 mb-8 reveal">
-                    <span className="bg-[#FDE68A] border-[3px] font-inter border-[#1C1917] rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_#1C1917]">
+                    <span className="bg-sun border-[3px] font-inter border-[#1C1917] rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_#1C1917]">
                         02 · Tech stack
                     </span>
                     <div className="hidden md:block flex-1 h-0.75 bg-[#1C1917] opacity-20 rounded-full" />

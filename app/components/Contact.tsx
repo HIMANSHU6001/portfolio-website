@@ -62,9 +62,9 @@ export default function Contact() {
       toast.custom((t) => (
         <div
           data-testid="contact-success"
-          className={`${t.visible ? 'animate-enter' : 'animate-leave'} flex items-center gap-3 bg-white border-[3px] border-[#1C1917] rounded-2xl px-5 py-4 shadow-[6px_6px_0_0_#B8E6C6] max-w-sm`}
+          className={`${t.visible ? 'animate-enter' : 'animate-leave'} flex items-center gap-3 bg-white border-[3px] border-[#1C1917] rounded-2xl px-5 py-4 shadow-[6px_6px_0_0_var(--mint)] max-w-sm`}
         >
-          <div className="w-8 h-8 rounded-full bg-[#B8E6C6] border-[2px] border-[#1C1917] flex items-center justify-center flex-shrink-0">
+          <div className="w-8 h-8 rounded-full bg-mint border-[2px] border-[#1C1917] flex items-center justify-center flex-shrink-0">
             <Star size={16} fill="#1C1917" />
           </div>
           <p className="text-[15px] text-[#1C1917] leading-tight">
@@ -83,7 +83,7 @@ export default function Contact() {
     <section id="contact" className="relative py-24 md:py-32">
       <div className="max-w-5xl mx-auto px-6 md:px-10">
         <div className="flex items-end gap-4 mb-10">
-          <span className="bg-[#FDE68A] border-[3px] font-inter border-[#1C1917] rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_#1C1917]">
+          <span className="bg-sun border-[3px] font-inter border-[#1C1917] rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_#1C1917]">
             05 · Say hi
           </span>
           <div className="hidden md:block flex-1 h-0.75 bg-[#1C1917] opacity-20 rounded-full" />
@@ -106,7 +106,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="contact-gmail"
-                className="sticker-sm bg-[#FFF6E9] border-[3px] border-[#1C1917] rounded-2xl px-4 py-3 font-bold flex items-center justify-between"
+                className="sticker-sm bg-cream border-[3px] border-[#1C1917] rounded-2xl px-4 py-3 font-bold flex items-center justify-between"
               >
                 <div className="flex items-center gap-2">
                   <SiGmail size={18} />
@@ -119,7 +119,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="contact-github"
-                className="sticker-sm bg-[#B8E6C6] border-[3px] border-[#1C1917] rounded-2xl px-4 py-3 font-bold flex items-center justify-between"
+                className="sticker-sm bg-mint border-[3px] border-[#1C1917] rounded-2xl px-4 py-3 font-bold flex items-center justify-between"
               >
                 <div className="flex items-center gap-2">
                   <FaGithub size={18} />
@@ -132,7 +132,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="contact-linkedin"
-                className="sticker-sm bg-[#F7C6D9] border-[3px] border-[#1C1917] rounded-2xl px-4 py-3 font-bold flex items-center justify-between"
+                className="sticker-sm bg-pink border-[3px] border-[#1C1917] rounded-2xl px-4 py-3 font-bold flex items-center justify-between"
               >
                 <div className="flex items-center gap-2">
                   <FaLinkedin size={18} />
@@ -150,10 +150,10 @@ export default function Contact() {
           <form
             data-testid="contact-form"
             onSubmit={onSubmit}
-            className="sticker bg-[#FFF6E9] border-4 border-[#1C1917] rounded-4xl p-6 md:p-8 relative"
+            className="sticker bg-cream border-4 border-[#1C1917] rounded-4xl p-6 md:p-8 relative"
           >
             <div className="absolute -top-4 -left-4 rotate-[-8deg] hidden md:block">
-              <Star size={38} fill="#FDE68A" />
+              <Star size={38} fill="var(--sun)" />
             </div>
             <label className="block font-extrabold text-sm uppercase tracking-widest mb-2">Your name</label>
             <input
@@ -163,7 +163,7 @@ export default function Contact() {
               value={form.name}
               onChange={onChange}
               placeholder="Jhon Doe"
-              className="w-full bg-white border-[3px] border-[#1C1917] rounded-xl px-4 py-3 font-semibold outline-none focus:shadow-[4px_4px_0_0_#B8E6C6] transition-shadow mb-5"
+              className="w-full bg-white border-[3px] border-[#1C1917] rounded-xl px-4 py-3 font-semibold outline-none focus:shadow-[4px_4px_0_0_var(--mint)] transition-shadow mb-5"
             />
 
             <label className="block font-extrabold text-sm uppercase tracking-widest mb-2">Email</label>
@@ -174,7 +174,7 @@ export default function Contact() {
               value={form.email}
               onChange={onChange}
               placeholder="jhon@compute.co"
-              className="w-full bg-white border-[3px] border-[#1C1917] rounded-xl px-4 py-3 font-semibold outline-none focus:shadow-[4px_4px_0_0_#F7C6D9] transition-shadow mb-5"
+              className="w-full bg-white border-[3px] border-[#1C1917] rounded-xl px-4 py-3 font-semibold outline-none focus:shadow-[4px_4px_0_0_var(--pink)] transition-shadow mb-5"
             />
 
             <label className="block font-extrabold text-sm uppercase tracking-widest mb-2">Message</label>
@@ -185,13 +185,13 @@ export default function Contact() {
               onChange={onChange}
               placeholder="Tell me about your project, timeline, and dreams..."
               rows={5}
-              className="w-full bg-white border-[3px] border-[#1C1917] rounded-xl px-4 py-3 font-semibold outline-none focus:shadow-[4px_4px_0_0_#FDE68A] transition-shadow mb-4 resize-none"
+              className="w-full bg-white border-[3px] border-[#1C1917] rounded-xl px-4 py-3 font-semibold outline-none focus:shadow-[4px_4px_0_0_var(--sun)] transition-shadow mb-4 resize-none"
             />
 
             {error ? (
               <p
                 data-testid="contact-error"
-                className="mb-3 text-sm font-bold text-[#B44] bg-[#F7C6D9] border-2 border-[#1C1917] rounded-xl px-3 py-2"
+                className="mb-3 text-sm font-bold text-[#B44] bg-pink border-2 border-[#1C1917] rounded-xl px-3 py-2"
               >
                 {error}
               </p>
@@ -201,7 +201,7 @@ export default function Contact() {
               data-testid="contact-submit-button"
               type="submit"
               disabled={loading}
-              className={`press sticker inline-flex items-center gap-2 bg-[#1C1917] text-[#FFF6E9] border-[3px] border-[#1C1917] rounded-full px-7 py-3.5 font-extrabold text-sm uppercase tracking-wider ${loading ? "opacity-70 cursor-not-allowed" : ""}`}
+              className={`press sticker inline-flex items-center gap-2 bg-[#1C1917] text-cream border-[3px] border-[#1C1917] rounded-full px-7 py-3.5 font-extrabold text-sm uppercase tracking-wider ${loading ? "opacity-70 cursor-not-allowed" : ""}`}
             >
               {loading ? "Sending..." : <>Send message <ArrowRight size={18} /></>}
             </button>
