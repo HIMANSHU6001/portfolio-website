@@ -2,7 +2,7 @@ import { Star } from "./Illustrations";
 
 export default function Footer() {
   return (
-    <footer data-testid="site-footer" className="relative bg-[#1C1917] text-cream border-t-4 border-[#1C1917] py-14">
+    <footer data-testid="site-footer" className="relative bg-ink text-cream border-t-4 border-ink py-14">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           <div>
@@ -42,22 +42,17 @@ export default function Footer() {
             <p className="text-xs font-extrabold uppercase tracking-widest mb-3 opacity-70">Elsewhere</p>
             <ul className="space-y-2 text-sm font-semibold">
               <li>
-                <a href="#" className="hover:text-pink">
+                <a href="https://github.com/HIMANSHU6001" className="hover:text-pink">
                   GitHub
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-pink">
+                <a href="https://www.linkedin.com/in/himanshu-kaushik-aa2003280/" className="hover:text-pink">
                   LinkedIn
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-pink">
-                  Twitter / X
-                </a>
-              </li>
-              <li>
-                <a href="mailto:hello@himanshu.dev" className="hover:text-pink">
+                <a href="mailto:hk9797592893@gmail.com" className="hover:text-pink">
                   Email
                 </a>
               </li>
@@ -65,8 +60,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-6 border-t border-[#FFF6E9]/20 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <p className="text-xs font-semibold opacity-70">© {new Date().getFullYear()} Himanshu Kaushik — crafted with ☕ & ❤️</p>
+        <div className="mt-12 pt-6 border-t border-[var(--color-paper)]/20 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <p className="text-xs font-semibold opacity-70"> {new Date().getFullYear()} Himanshu Kaushik — crafted with ☕ & ❤️</p>
         </div>
       </div>
     </footer>

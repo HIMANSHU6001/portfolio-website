@@ -1,6 +1,9 @@
+import type { CSSProperties } from "react";
+
 type SvgProps = {
     className?: string;
     size?: number;
+    style?: CSSProperties;
 };
 
 type ColorProps = SvgProps & {
@@ -8,7 +11,7 @@ type ColorProps = SvgProps & {
     color?: string;
 };
 
-const INK = "#1C1917";
+const INK = "var(--color-ink)";
 
 export function Cloud({ className = "", fill = "#FFFFFF", size = 100 }: ColorProps) {
     return (
@@ -46,9 +49,9 @@ export function Squiggle({ className = "", color = INK, size = 80 }: ColorProps)
     );
 }
 
-export function Sun({ className = "", size = 100 }: SvgProps) {
+export function Sun({ className = "", size = 100, style }: SvgProps) {
     return (
-        <svg viewBox="0 0 100 100" width={size} className={className} xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 100 100" width={size} className={className} style={style} xmlns="http://www.w3.org/2000/svg">
             <circle cx="50" cy="50" r="22" fill="var(--sun)" stroke={INK} strokeWidth="3" />
             {[0, 45, 90, 135, 180, 225, 270, 315].map((deg) => (
                 <line
@@ -63,6 +66,14 @@ export function Sun({ className = "", size = 100 }: SvgProps) {
                     transform={`rotate(${deg} 50 50)`}
                 />
             ))}
+        </svg>
+    );
+}
+
+export function Moon({ className = "", size = 100, style }: SvgProps) {
+    return (
+        <svg viewBox="0 0 100 100" width={size} className={className} style={style} xmlns="http://www.w3.org/2000/svg">
+            <path d="M 55 15 A 35 35 0 1 0 85 75 A 28 28 0 0 1 55 15 Z" fill="var(--sun)" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
         </svg>
     );
 }
@@ -109,7 +120,7 @@ export function Avatar({ className = "", size = 240 }: SvgProps) {
             <path d="M40 190 Q40 140 100 140 Q160 140 160 190" fill="var(--mint)" stroke={INK} strokeWidth="4" strokeLinejoin="round" />
             <rect x="88" y="118" width="24" height="24" fill="#FDD9B5" stroke={INK} strokeWidth="4" />
             <ellipse cx="100" cy="90" rx="40" ry="42" fill="#FDD9B5" stroke={INK} strokeWidth="4" />
-            <path d="M60 82 Q56 44 100 44 Q144 44 140 82 Q132 66 100 66 Q78 66 60 82 Z" fill="#1C1917" stroke={INK} strokeWidth="4" strokeLinejoin="round" />
+            <path d="M60 82 Q56 44 100 44 Q144 44 140 82 Q132 66 100 66 Q78 66 60 82 Z" fill="var(--color-ink)" stroke={INK} strokeWidth="4" strokeLinejoin="round" />
             <circle cx="86" cy="92" r="3.5" fill={INK} />
             <circle cx="114" cy="92" r="3.5" fill={INK} />
             <circle cx="78" cy="104" r="5" fill="#E89AB6" opacity="0.7" />
@@ -142,8 +153,8 @@ export function ProjectThumb({ variant = "app", className = "" }: SvgProps & { v
             <circle cx="54" cy="40" r="4" fill="var(--sun)" stroke={INK} strokeWidth="2" />
             <circle cx="68" cy="40" r="4" fill="var(--mint)" stroke={INK} strokeWidth="2" />
             <rect x="40" y="60" width="120" height="10" rx="4" fill={INK} />
-            <rect x="40" y="78" width="200" height="6" rx="3" fill="#1C1917" opacity="0.4" />
-            <rect x="40" y="90" width="180" height="6" rx="3" fill="#1C1917" opacity="0.4" />
+            <rect x="40" y="78" width="200" height="6" rx="3" fill="var(--color-ink)" opacity="0.4" />
+            <rect x="40" y="90" width="180" height="6" rx="3" fill="var(--color-ink)" opacity="0.4" />
             <rect x="40" y="110" width="72" height="28" rx="14" fill="var(--pink)" stroke={INK} strokeWidth="3" />
             <rect x="122" y="110" width="72" height="28" rx="14" fill="var(--mint)" stroke={INK} strokeWidth="3" />
         </svg>

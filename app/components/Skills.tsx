@@ -14,20 +14,16 @@ import {
     SiExpress,
     SiGraphql,
     SiTailwindcss,
-    SiFramer,
-    SiLangchain,
     SiGooglecloud,
     SiKubernetes,
     SiNginx,
     SiGithubactions,
-    SiTerraform,
     SiPrisma,
     SiApachekafka,
     SiSocketdotio,
     SiFirebase,
     SiLanggraph,
     SiTanstack,
-    SiR3,
     SiThreedotjs,
     SiAnthropic,
 } from "react-icons/si";
@@ -106,7 +102,7 @@ const rows: SkillRow[] = [
 
 function Chip({ label, icon: Icon, color }: SkillChip) {
     return (
-        <span className="inline-flex items-center gap-2 bg-cream border-[2.5px] border-[#1C1917] rounded-full px-5 py-2 text-sm md:text-base font-bold shadow-[2px_2px_0_0_#1C1917] whitespace-nowrap">
+        <span className="inline-flex items-center gap-2 bg-cream border-[2.5px] border-ink rounded-full px-5 py-2 text-sm md:text-base font-bold shadow-[2px_2px_0_0_var(--color-ink)] whitespace-nowrap">
             <Icon size={18} style={{ color }} className="shrink-0" />
             {label}
         </span>
@@ -115,19 +111,19 @@ function Chip({ label, icon: Icon, color }: SkillChip) {
 
 export default function Skills() {
     return (
-        <section id="skills" className="relative py-24 md:py-32 bg-cream border-y-4 border-[#1C1917] overflow-hidden">
+        <section id="skills" className="relative py-24 md:py-32 bg-cream border-y-4 border-ink overflow-hidden">
             <div className="max-w-6xl mx-auto px-6 md:px-10 mb-12">
                 <div className="flex items-end gap-4 mb-8 reveal">
-                    <span className="bg-sun border-[3px] font-inter border-[#1C1917] rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_#1C1917]">
+                    <span className="bg-sun text-[#0f172a] border-[3px] font-inter border-ink rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_var(--color-ink)]">
                         02 · Tech stack
                     </span>
-                    <div className="hidden md:block flex-1 h-0.75 bg-[#1C1917] opacity-20 rounded-full" />
+                    <div className="hidden md:block flex-1 h-0.75 bg-ink opacity-20 rounded-full" />
                 </div>
 
                 <h2 data-testid="skills-heading" className="font-display font-black text-4xl md:text-5xl max-w-2xl leading-none reveal">
                     The <span className="hl-pink">tools</span> I reach for daily.
                 </h2>
-                <p className="mt-4 text-lg text-[#44403C] font-medium max-w-2xl reveal">
+                <p className="mt-4 text-lg text-ink opacity-80 font-medium max-w-2xl reveal">
                     A small, sharp toolbox. Fast to prototype, boring where it counts, delightful where it matters.
                 </p>
             </div>
@@ -137,7 +133,7 @@ export default function Skills() {
                     <div
                         key={row.id}
                         data-testid={`stack-row-${index}`}
-                        className="marquee-track py-3 border-y-[3px] border-[#1C1917] relative"
+                        className="marquee-track py-3 border-y-[3px] border-ink relative"
                         style={{ background: row.bg }}
                     >
                         <div

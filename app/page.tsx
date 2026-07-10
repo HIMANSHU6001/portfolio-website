@@ -9,7 +9,7 @@ import Skills from "./components/Skills";
 
 export default function Home() {
   return (
-    <div className="grain min-h-screen overflow-x-hidden bg-[#FBEEDC] text-[#1C1917]">
+    <div className="grain min-h-screen overflow-x-hidden bg-paper text-ink">
       <Navbar />
       <main>
         <Hero />

@@ -18,7 +18,7 @@ const timeline: TimelineItem[] = [
     company: "GDG NIT Rourkela",
     period: "2024 — 2025",
     place: "Rourkela, Odisha",
-    color: "#FFF6E9",
+    color: "var(--color-paper)",
     points: [
       "Led technical execution of HackNITR 7.0, managing platform infrastructure and workflows for 1,000+ participants across 48 hours."
     ],
@@ -28,7 +28,7 @@ const timeline: TimelineItem[] = [
     company: "Vizora Enterprises Pvt. Ltd.",
     period: "May 2024 — Dec 2024",
     place: "",
-    color: "#FDE68A",
+    color: "var(--lavender)",
     points: [
       "Built interactive 3D product visualizations for 15+ products using Three.js, enabling real-time in-browser exploration.",
       "Designed a role-based admin dashboard for 30+ internal users, reducing content update time by 40%."
@@ -83,13 +83,13 @@ export default function Experience() {
   }, []);
 
   return (
-    <section id="experience" className="relative py-24 md:py-32 bg-cream border-y-4 border-[#1C1917]">
+    <section id="experience" className="relative py-24 md:py-32 bg-cream border-y-4 border-ink">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <div className="flex items-end gap-4 mb-10">
-          <span className="bg-pink border-[3px] font-inter border-[#1C1917] rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_#1C1917]">
+          <span className="bg-pink text-[#0f172a] border-[3px] font-inter border-ink rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_var(--color-ink)]">
             04 · The road so far
           </span>
-          <div className="hidden md:block flex-1 h-0.75 bg-[#1C1917] opacity-20 rounded-full" />
+          <div className="hidden md:block flex-1 h-0.75 bg-ink opacity-20 rounded-full" />
         </div>
 
         <h2 data-testid="experience-heading" className="font-display font-black text-4xl md:text-5xl max-w-3xl leading-none">
@@ -97,7 +97,7 @@ export default function Experience() {
         </h2>
 
         <div className="mt-14 relative" ref={timelineRef}>
-          <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 top-0 bottom-0 w-[3px] bg-[#1C1917] opacity-100" />
+          <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 top-0 bottom-0 w-[3px] bg-ink opacity-100" />
 
           {/* Scroll-tracking icon */}
           <div
@@ -107,7 +107,7 @@ export default function Experience() {
               transform: "translate(-50%, -50%)",
             }}
           >
-            <RocketLaunch size={60} className="text-[#1C1917] rotate-180" />
+            <RocketLaunch size={60} className="text-ink rotate-180" />
           </div>
 
           <div className="space-y-10">
@@ -119,22 +119,22 @@ export default function Experience() {
                   }`}
               >
                 <div
-                  className={`sticker bg-cream border-4 border-[#1C1917] rounded-2xl p-6 ${index % 2 === 0 ? "md:mr-8" : "md:ml-8 md:col-start-2"
+                  className={`sticker bg-cream border-4 border-ink rounded-2xl p-6 ${index % 2 === 0 ? "md:mr-8" : "md:ml-8 md:col-start-2"
                     }`}
                   style={{ background: item.color }}
                 >
                   <div className="flex items-center justify-between mb-2 flex-wrap gap-2">
-                    <span className="text-xs font-extrabold uppercase tracking-widest bg-[#1C1917] text-[#FFF6E9] px-3 py-1 rounded-full">
+                    <span className="text-xs font-extrabold uppercase tracking-widest bg-ink text-paper px-3 py-1 rounded-full">
                       {item.period}
                     </span>
-                    <span className="text-xs font-bold text-[#44403C]">{item.place}</span>
+                    <span className="text-xs font-bold text-ink opacity-80">{item.place}</span>
                   </div>
                   <h3 className="font-display font-black text-2xl leading-tight">{item.role}</h3>
-                  <p className="text-sm font-bold text-[#44403C] mb-3">@ {item.company}</p>
+                  <p className="text-sm font-bold text-ink opacity-80 mb-3">@ {item.company}</p>
                   <ul className="space-y-2">
                     {item.points.map((point, pointIndex) => (
-                      <li key={pointIndex} className="flex gap-2 text-[15px] font-medium text-[#1C1917] leading-snug">
-                        <span className="mt-1 w-2 h-2 rounded-full bg-[#1C1917] shrink-0" />
+                      <li key={pointIndex} className="flex gap-2 text-[15px] font-medium text-ink leading-snug">
+                        <span className="mt-1 w-2 h-2 rounded-full bg-ink shrink-0" />
                         <span>{point}</span>
                       </li>
                     ))}

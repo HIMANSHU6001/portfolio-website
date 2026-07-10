@@ -80,14 +80,14 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
   return (
     <article
       data-testid={`project-card-${id}`}
-      className="sticker bg-cream border-4 border-[#1C1917] rounded-4xl overflow-hidden flex flex-col"
+      className="sticker bg-cream border-4 border-ink rounded-4xl overflow-hidden flex flex-col"
       style={{ transform: `rotate(${rotation})` }}
     >
-      <div className="border-b-4 border-[#1C1917] relative aspect-video">
+      <div className="border-b-4 border-ink relative aspect-video">
         {project.image ? (
           <Image src={project.image} alt={project.title} fill className="object-cover" />
         ) : (
-          <div className="w-full h-full bg-[#E5E5E5] flex items-center justify-center font-bold text-[#1C1917]">
+          <div className="w-full h-full bg-cream flex items-center justify-center font-bold text-ink">
             No image
           </div>
         )}
@@ -95,7 +95,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
       <div className="p-6 md:p-7 flex flex-col flex-1">
         <div className="flex items-center justify-between mb-3">
           <span
-            className="text-xs font-extrabold uppercase tracking-widest px-3 py-1 rounded-full border-2 border-[#1C1917]"
+            className="text-xs font-extrabold uppercase tracking-widest px-3 py-1 rounded-full border-2 border-ink"
             style={{ background: accent }}
           >
             {year}
@@ -103,15 +103,15 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
           <div className="flex gap-2 flex-wrap justify-end">
             {stack.map((stackItem, stackIndex) => (
               <Fragment key={stackItem}>
-                {stackIndex > 0 && <span className="text-[#1C1917] opacity-30">·</span>}
-                <span className="text-[11px] font-bold text-[#44403C]">{stackItem}</span>
+                {stackIndex > 0 && <span className="text-ink opacity-30">·</span>}
+                <span className="text-[11px] font-bold text-ink opacity-80">{stackItem}</span>
               </Fragment>
             ))}
           </div>
         </div>
 
         <h3 className="font-display font-black text-2xl md:text-3xl">{title}</h3>
-        <p className="mt-2 text-[#44403C] font-medium leading-relaxed">{blurb}</p>
+        <p className="mt-2 text-ink opacity-80 font-medium leading-relaxed">{blurb}</p>
 
         <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
           <div className="flex gap-3">
@@ -120,7 +120,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
                 href={github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-white hover:bg-mint text-[#1C1917] border-2 border-[#1C1917] rounded-full px-4 py-1.5 font-extrabold text-xs uppercase tracking-widest transition-colors shadow-[2px_2px_0_0_#1C1917] hover:-translate-y-0.5 hover:shadow-[4px_4px_0_0_#1C1917]"
+                className="flex items-center gap-2 bg-cream hover:bg-mint text-[#0f172a] text-ink border-2 border-ink rounded-full px-4 py-1.5 font-extrabold text-xs uppercase tracking-widest transition-colors shadow-[2px_2px_0_0_var(--color-ink)] hover:-translate-y-0.5 hover:shadow-[4px_4px_0_0_var(--color-ink)]"
               >
                 <FaGithub size={14} />
                 Code
@@ -131,14 +131,14 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
                 href={live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-white hover:bg-pink text-[#1C1917] border-2 border-[#1C1917] rounded-full px-4 py-1.5 font-extrabold text-xs uppercase tracking-widest transition-colors shadow-[2px_2px_0_0_#1C1917] hover:-translate-y-0.5 hover:shadow-[4px_4px_0_0_#1C1917]"
+                className="flex items-center gap-2 bg-cream hover:bg-pink text-[#0f172a] text-ink border-2 border-ink rounded-full px-4 py-1.5 font-extrabold text-xs uppercase tracking-widest transition-colors shadow-[2px_2px_0_0_var(--color-ink)] hover:-translate-y-0.5 hover:shadow-[4px_4px_0_0_var(--color-ink)]"
               >
                 Live
                 <ArrowRight size={14} className="-rotate-45" />
               </a>
             )}
           </div>
-          <span className="text-xs font-bold text-[#44403C]">
+          <span className="text-xs font-bold text-ink opacity-80">
             #{String(index + 1).padStart(2, "0")}
           </span>
         </div>
@@ -152,16 +152,16 @@ export default function Projects() {
     <section id="projects" className="relative py-24 md:py-32">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <div className="flex items-end gap-4 mb-10">
-          <span className="bg-mint font-inter border-[3px] border-[#1C1917] rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_#1C1917]">
+          <span className="bg-mint text-[#0f172a] font-inter border-[3px] border-ink rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_var(--color-ink)]">
             03 · Selected work
           </span>
-          <div className="hidden md:block flex-1 h-0.75 bg-[#1C1917] opacity-20 rounded-full" />
+          <div className="hidden md:block flex-1 h-0.75 bg-ink opacity-20 rounded-full" />
         </div>
 
         <h2 data-testid="projects-heading" className="font-display font-black text-4xl md:text-5xl max-w-3xl leading-none">
           Little worlds I{"\u2019"}ve <span className="hl-mint">built</span> recently.
         </h2>
-        <p className="mt-4 text-lg text-[#44403C] font-medium max-w-2xl">
+        <p className="mt-4 text-lg text-ink opacity-80 font-medium max-w-2xl">
           A mix of client work, side quests, and open source. Ask me about any of them.
         </p>
 
