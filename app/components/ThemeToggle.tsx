@@ -26,7 +26,7 @@ export default function ThemeToggle() {
     <button
       data-testid="theme-toggle"
       onClick={cycleTheme}
-      className="w-8 h-8 flex items-center justify-center rounded-full bg-paper border-[1.5px] border-ink text-ink hover:scale-110 transition-transform shadow-[2px_2px_0_0_var(--color-ink)]"
+      className="w-8 h-8 flex items-center justify-center rounded-full bg-paper border-[1.5px] border-ink text-ink hover:scale-110 transition-transform shadow-[1px_1px_0_0_var(--color-ink)]"
       aria-label="Toggle Theme"
       title={`Current Theme: ${theme}`}
     >

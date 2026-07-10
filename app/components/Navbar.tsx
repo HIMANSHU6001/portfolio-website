@@ -68,7 +68,7 @@ export default function Navbar() {
             data-testid="nav-hire-cta cursor-pointer"
             type="button"
             onClick={() => scrollToSection("contact")}
-            className="px-4 py-1.5 rounded-full font-extrabold text-xs uppercase tracking-wider bg-ink text-paper hover:bg-[#44403C] transition-transform hover:-translate-y-0.5"
+            className="px-4 py-1.5 rounded-full font-extrabold text-xs uppercase tracking-wider bg-ink text-paper transition-transform hover:-translate-y-0.5 shadow-[2px_2px_0_0_var(--color-mint-dark)]"
           >
             Hire me
           </button>
