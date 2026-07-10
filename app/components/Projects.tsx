@@ -25,8 +25,8 @@ const projects: Project[] = [
     blurb:
       "Engineered a multi-language code execution sandbox using rootless Docker, implementing network isolation, memory caps, and seccomp filtering. Orchestrated decoupled execution using Celery + Redis, streaming results via Redis Pub/Sub over WebSocket. Integrated an AI code tutor using MCP tools and input guardrails.",
     stack: ["FastAPI", "Celery", "Redis", "Docker", "OpenAI Agents SDK"],
-    variant: "app",
-    accent: "#F7C6D9",
+    variant: "api",
+    accent: "var(--pink)",
     year: "2024",
     github: "https://github.com/HIMANSHU6001/remote-code-execution-engine",
     live: "https://codespace.himanshu6001.dev",
@@ -80,8 +80,8 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
   return (
     <article
       data-testid={`project-card-${id}`}
-      className="sticker bg-cream border-4 border-ink rounded-4xl overflow-hidden flex flex-col"
-      style={{ transform: `rotate(${rotation})` }}
+      className="sticker bg-pink border-4 border-ink rounded-4xl overflow-hidden flex flex-col"
+      style={{ transform: `rotate(${rotation})`, background: accent }}
     >
       <div className="border-b-4 border-ink relative aspect-video">
         {project.image ? (
@@ -95,8 +95,8 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
       <div className="p-6 md:p-7 flex flex-col flex-1">
         <div className="flex items-center justify-between mb-3">
           <span
-            className="text-xs font-extrabold uppercase tracking-widest px-3 py-1 rounded-full border-2 border-ink"
-            style={{ background: accent }}
+            className="text-xs font-extrabold uppercase bg-paper tracking-widest px-3 py-1 rounded-full border-2 border-ink"
+          // style={{ background: accent }}
           >
             {year}
           </span>
