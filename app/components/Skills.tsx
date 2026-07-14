@@ -114,7 +114,7 @@ export default function Skills() {
         <section id="skills" className="relative py-24 md:py-32 bg-cream border-y-4 border-ink overflow-hidden">
             <div className="max-w-6xl mx-auto px-6 md:px-10 mb-12">
                 <div className="flex items-end gap-4 mb-8 reveal">
-                    <span className="bg-sun text-[#0f172a] border-[3px] font-inter border-ink rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_var(--color-ink)]">
+                    <span className="bg-sun text-ink border-[3px] font-inter border-ink rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_var(--color-ink)]">
                         02 · Tech stack
                     </span>
                     <div className="hidden md:block flex-1 h-0.75 bg-ink opacity-20 rounded-full" />

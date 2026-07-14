@@ -120,7 +120,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
                 href={github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-cream hover:bg-mint text-[#0f172a] text-ink border-2 border-ink rounded-full px-4 py-1.5 font-extrabold text-xs uppercase tracking-widest transition-colors shadow-[2px_2px_0_0_var(--color-ink)] hover:-translate-y-0.5 hover:shadow-[4px_4px_0_0_var(--color-ink)]"
+                className="flex items-center gap-2 bg-cream hover:bg-mint text-ink border-2 border-ink rounded-full px-4 py-1.5 font-extrabold text-xs uppercase tracking-widest transition-colors shadow-[2px_2px_0_0_var(--color-ink)] hover:-translate-y-0.5 hover:shadow-[4px_4px_0_0_var(--color-ink)]"
               >
                 <FaGithub size={14} />
                 Code
@@ -131,7 +131,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
                 href={live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-cream hover:bg-pink text-[#0f172a] text-ink border-2 border-ink rounded-full px-4 py-1.5 font-extrabold text-xs uppercase tracking-widest transition-colors shadow-[2px_2px_0_0_var(--color-ink)] hover:-translate-y-0.5 hover:shadow-[4px_4px_0_0_var(--color-ink)]"
+                className="flex items-center gap-2 bg-cream hover:bg-pink text-ink border-2 border-ink rounded-full px-4 py-1.5 font-extrabold text-xs uppercase tracking-widest transition-colors shadow-[2px_2px_0_0_var(--color-ink)] hover:-translate-y-0.5 hover:shadow-[4px_4px_0_0_var(--color-ink)]"
               >
                 Live
                 <ArrowRight size={14} className="-rotate-45" />
@@ -152,7 +152,7 @@ export default function Projects() {
     <section id="projects" className="relative py-24 md:py-32">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <div className="flex items-end gap-4 mb-10">
-          <span className="bg-mint text-[#0f172a] font-inter border-[3px] border-ink rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_var(--color-ink)]">
+          <span className="bg-mint font-inter border-[3px] border-ink rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_var(--color-ink)]">
             03 · Selected work
           </span>
           <div className="hidden md:block flex-1 h-0.75 bg-ink opacity-20 rounded-full" />

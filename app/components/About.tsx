@@ -14,7 +14,7 @@ export default function About() {
         <section id="about" className="relative py-24 md:py-32">
             <div className="max-w-6xl mx-auto px-6 md:px-10">
                 <div className="flex items-end gap-4 mb-10 reveal">
-                    <span className="bg-pink text-[#0f172a] border-[3px] font-inter border-ink rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_var(--color-ink)]">
+                    <span className="bg-pink text-ink border-[3px] font-inter border-ink rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_var(--color-ink)]">
                         01 · About
                     </span>
                     <div className="hidden md:block flex-1 h-0.75 bg-ink opacity-20 rounded-full" />
@@ -22,7 +22,7 @@ export default function About() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-12 items-start">
                     <div className="relative reveal">
-                        <div className="bg-mint text-[#0f172a] border-4 border-ink rounded-4xl p-8 shadow-[8px_8px_0_0_var(--color-ink)] -rotate-2">
+                        <div className="bg-mint text-ink border-4 border-ink rounded-4xl p-8 shadow-[8px_8px_0_0_var(--color-ink)] -rotate-2">
                             <div className="flex justify-center py-4">
                                 <CoffeeCup size={120} />
                             </div>
@@ -32,9 +32,6 @@ export default function About() {
                             <p className="text-center text-xs font-bold uppercase tracking-widest mt-3 text-ink opacity-80">
                                 - my sticky note
                             </p>
-                        </div>
-                        <div className="absolute -top-6 -right-6 rotate-12 hidden md:block">
-                            <Star size={54} fill="var(--sun)" />
                         </div>
                         <div className="absolute -bottom-8 -left-4 -rotate-6 hidden md:block">
                             <Plant size={110} />

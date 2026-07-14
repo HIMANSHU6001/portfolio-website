@@ -91,7 +91,7 @@ export default function Navbar() {
             data-testid="nav-toggle"
             type="button"
             onClick={() => setOpen((current) => !current)}
-            className="w-8 h-8 rounded-full bg-mint text-[#0f172a] border-2 border-ink flex items-center justify-center"
+            className="w-8 h-8 rounded-full bg-mint text-ink border-2 border-ink flex items-center justify-center"
             aria-label="Toggle menu"
             aria-expanded={open}
           >

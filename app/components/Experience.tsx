@@ -86,7 +86,7 @@ export default function Experience() {
     <section id="experience" className="relative py-24 md:py-32 bg-cream border-y-4 border-ink">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <div className="flex items-end gap-4 mb-10">
-          <span className="bg-pink text-[#0f172a] border-[3px] font-inter border-ink rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_var(--color-ink)]">
+          <span className="bg-pink text-ink border-[3px] font-inter border-ink rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_var(--color-ink)]">
             04 · The road so far
           </span>
           <div className="hidden md:block flex-1 h-0.75 bg-ink opacity-20 rounded-full" />

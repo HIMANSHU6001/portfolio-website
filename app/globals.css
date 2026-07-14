@@ -1,39 +1,55 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,800;9..144,900&family=Inter:wght@400;500;600;700;800;900&family=Work+Sans:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,800;9..144,900&family=Outfit:wght@300;400;500;600;700;800;900&family=Work+Sans:wght@400;500;600;700;800;900&display=swap");
 @import "tailwindcss";
 
 :root,
 :root[data-theme="day"] {
-  --ink: #1e293b;
-  --paper: #fefaf0;
-  --cream: #ffffff;
-  --mint: #E4D6A9;
-  --mint-dark: #827148;
-  --pink: #E8A07C;
-  --sun: #fbbf24;
-  --peach-surface: #fffbeb;
-  --baby-blue: #60a5fa;
-  --peach-pastel: #E8A07C;
-  --lavender: #a78bfa;
-  --background: var(--paper);
-  --foreground: var(--ink);
+  --background: #fafaf9;
+  --surface: #ffffff;
+  --foreground: #1c1917;
+  --muted: #78716c;
+  --border: #e7e5e4;
+  --primary: #b45309;
+  /* Map old chaotic colors to the professional palette */
+  --ink: var(--foreground);
+  --paper: var(--background);
+  --cream: var(--surface);
+
+  /* Subtle variations of primary / muted for accents */
+  --mint: #fef3c7;
+  --mint-dark: #b45309;
+  --pink: #fffbeb;
+  --sun: #f5f5f4;
+  --peach-surface: var(--surface);
+  --baby-blue: #fde68a;
+  --peach-pastel: #fafaf9;
+  --lavender: #e7e5e4;
+
   --sun-opacity: 1;
   --moon-opacity: 0;
 }
 
 :root[data-theme="night"] {
-  --ink: #fcc5b6;
-  --paper: #0e245c;
-  --cream: #341358;
-  --mint: #D63940;
-  --mint-dark: #9C2A4B;
-  --pink: #9C2A4B;
-  --sun: #F4633C;
-  --peach-surface: #5E1D53;
-  --baby-blue: #D63940;
-  --peach-pastel: #F4633C;
-  --lavender: #5E1D53;
-  --background: var(--paper);
-  --foreground: var(--ink);
+  --background: #0c0a09;
+  --surface: #1c1917;
+  --foreground: #e7e5e4;
+  --muted: #a8a29e;
+  --border: #292524;
+  --primary: #b45309;
+  --ink: var(--foreground);
+  --paper: var(--background);
+  --cream: var(--surface);
+
+
+  /* Night mode subtle mapping */
+  --mint: #451a03;
+  --mint-dark: var(--primary);
+  --pink: #78350f;
+  --sun: #292524;
+  --peach-surface: var(--background);
+  --baby-blue: #92400e;
+  --peach-pastel: #1c1917;
+  --lavender: #292524;
+
   --sun-opacity: 0;
   --moon-opacity: 1;
 }
@@ -41,9 +57,10 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-fraunces);
+  --font-sans: "Outfit", sans-serif;
   --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   --font-inter: "Inter", sans-serif;
+
   --color-mint: var(--mint);
   --color-mint-dark: var(--mint-dark);
   --color-pink: var(--pink);
@@ -62,6 +79,7 @@ html {
 
 body {
   min-height: 100vh;
+  /* Original radial gradients using mint, pink, sun (now subtle) */
   background-image:
     radial-gradient(circle at 12% 18%, color-mix(in srgb, var(--mint) 35%, transparent) 0, transparent 240px),
     radial-gradient(circle at 88% 8%, color-mix(in srgb, var(--pink) 35%, transparent) 0, transparent 260px),
@@ -69,7 +87,7 @@ body {
   background-attachment: fixed;
   background-color: var(--paper);
   color: var(--ink);
-  font-family: var(--font-fraunces), "Fraunces", Georgia, serif;
+  font-family: var(--font-sans);
 }
 
 .font-display {
@@ -236,7 +254,6 @@ body {
     opacity: 0.85;
   }
 }
-
 
 @keyframes marquee {
   from {

@@ -64,7 +64,7 @@ export default function Contact() {
           data-testid="contact-success"
           className={`${t.visible ? 'animate-enter' : 'animate-leave'} flex items-center gap-3 bg-cream border-[3px] border-ink rounded-2xl px-5 py-4 shadow-[6px_6px_0_0_var(--mint)] max-w-sm`}
         >
-          <div className="w-8 h-8 rounded-full bg-mint text-[#0f172a] border-[2px] border-ink flex items-center justify-center flex-shrink-0">
+          <div className="w-8 h-8 rounded-full bg-mint text-ink border-[2px] border-ink flex items-center justify-center flex-shrink-0">
             <Star size={16} fill="var(--color-ink)" />
           </div>
           <p className="text-[15px] text-ink leading-tight">
@@ -83,7 +83,7 @@ export default function Contact() {
     <section id="contact" className="relative py-24 md:py-32">
       <div className="max-w-5xl mx-auto px-6 md:px-10">
         <div className="flex items-end gap-4 mb-10">
-          <span className="bg-sun text-[#0f172a] border-[3px] font-inter border-ink rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_var(--color-ink)]">
+          <span className="bg-sun text-ink border-[3px] font-inter border-ink rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_var(--color-ink)]">
             05 · Say hi
           </span>
           <div className="hidden md:block flex-1 h-0.75 bg-ink opacity-20 rounded-full" />
@@ -119,7 +119,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="contact-github"
-                className="sticker-sm bg-mint text-[#0f172a] border-[3px] border-ink rounded-2xl px-4 py-3 font-bold flex items-center justify-between"
+                className="sticker-sm bg-mint text-ink border-[3px] border-ink rounded-2xl px-4 py-3 font-bold flex items-center justify-between"
               >
                 <div className="flex items-center gap-2">
                   <FaGithub size={18} />
@@ -132,7 +132,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="contact-linkedin"
-                className="sticker-sm bg-pink text-[#0f172a] border-[3px] border-ink rounded-2xl px-4 py-3 font-bold flex items-center justify-between"
+                className="sticker-sm bg-pink text-ink border-[3px] border-ink rounded-2xl px-4 py-3 font-bold flex items-center justify-between"
               >
                 <div className="flex items-center gap-2">
                   <FaLinkedin size={18} />
@@ -191,7 +191,7 @@ export default function Contact() {
             {error ? (
               <p
                 data-testid="contact-error"
-                className="mb-3 text-sm font-bold text-[#B44] bg-pink text-[#0f172a] border-2 border-ink rounded-xl px-3 py-2"
+                className="mb-3 text-sm font-bold text-[#B44] bg-pink text-ink border-2 border-ink rounded-xl px-3 py-2"
               >
                 {error}
               </p>
