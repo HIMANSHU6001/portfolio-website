@@ -83,7 +83,7 @@ export default function Contact() {
     <section id="contact" className="relative py-24 md:py-32">
       <div className="max-w-5xl mx-auto px-6 md:px-10">
         <div className="flex items-end gap-4 mb-10">
-          <span className="bg-sun text-ink border-[3px] font-inter border-ink rounded-full px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-[3px_3px_0_0_var(--color-ink)]">
+          <span className="bg-sun text-ink border-[3px] font-inter border-ink rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-widest shadow-[3px_3px_0_0_var(--color-ink)]">
             05 · Say hi
           </span>
           <div className="hidden md:block flex-1 h-0.75 bg-ink opacity-20 rounded-full" />
@@ -152,10 +152,7 @@ export default function Contact() {
             onSubmit={onSubmit}
             className="sticker bg-cream border-4 border-ink rounded-4xl p-6 md:p-8 relative"
           >
-            <div className="absolute -top-4 -left-4 rotate-[-8deg] hidden md:block">
-              <Star size={38} fill="var(--sun)" />
-            </div>
-            <label className="block font-extrabold text-sm uppercase tracking-widest mb-2">Your name</label>
+            <label className="block font-bold text-sm uppercase tracking-widest mb-2">Your name</label>
             <input
               data-testid="contact-name-input"
               type="text"
@@ -166,7 +163,7 @@ export default function Contact() {
               className="w-full bg-cream border-[3px] border-ink rounded-xl px-4 py-3 font-semibold outline-none focus:shadow-[4px_4px_0_0_var(--mint)] transition-shadow mb-5"
             />
 
-            <label className="block font-extrabold text-sm uppercase tracking-widest mb-2">Email</label>
+            <label className="block font-bold text-sm uppercase tracking-widest mb-2">Email</label>
             <input
               data-testid="contact-email-input"
               type="email"
@@ -177,7 +174,7 @@ export default function Contact() {
               className="w-full bg-cream border-[3px] border-ink rounded-xl px-4 py-3 font-semibold outline-none focus:shadow-[4px_4px_0_0_var(--pink)] transition-shadow mb-5"
             />
 
-            <label className="block font-extrabold text-sm uppercase tracking-widest mb-2">Message</label>
+            <label className="block font-bold text-sm uppercase tracking-widest mb-2">Message</label>
             <textarea
               data-testid="contact-message-input"
               name="message"
@@ -201,7 +198,7 @@ export default function Contact() {
               data-testid="contact-submit-button"
               type="submit"
               disabled={loading}
-              className={`press sticker inline-flex items-center gap-2 bg-ink text-cream border-[3px] border-ink rounded-full px-7 py-3.5 font-extrabold text-sm uppercase tracking-wider ${loading ? "opacity-70 cursor-not-allowed" : ""}`}
+              className={`press sticker inline-flex items-center gap-2 bg-mint-dark text-cream border-[3px] border-ink rounded-full px-7 py-3.5 font-bold text-sm uppercase tracking-wider ${loading ? "opacity-70 cursor-not-allowed" : ""}`}
             >
               {loading ? "Sending..." : <>Send message <ArrowRight size={18} /></>}
             </button>

@@ -9,13 +9,13 @@ export default function Footer() {
             <p className="font-display font-black text-4xl leading-none">
               Himanshu Kaushik<span className="text-mint">*</span>
             </p>
-            <p className="mt-3 text-sm font-semibold text-cream opacity-70 max-w-xs">
+            <p className="mt-3 text-sm text-cream opacity-70 max-w-xs">
               A cheerful software developer building calm, fast, human-first software.
             </p>
           </div>
           <div>
-            <p className="text-xs font-extrabold uppercase tracking-widest mb-3 opacity-70">Wander</p>
-            <ul className="space-y-2 text-sm font-semibold">
+            <p className="text-xs font-semibold uppercase tracking-widest mb-3 opacity-70">Wander</p>
+            <ul className="space-y-2 text-sm">
               <li>
                 <a href="#about" className="hover:text-mint">
                   About
@@ -39,8 +39,8 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <p className="text-xs font-extrabold uppercase tracking-widest mb-3 opacity-70">Elsewhere</p>
-            <ul className="space-y-2 text-sm font-semibold">
+            <p className="text-xs font-semibold uppercase tracking-widest mb-3 opacity-70">Elsewhere</p>
+            <ul className="space-y-2 text-sm">
               <li>
                 <a href="https://github.com/HIMANSHU6001" className="hover:text-pink">
                   GitHub
@@ -61,7 +61,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-6 border-t border-[var(--color-paper)]/20 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <p className="text-xs font-semibold opacity-70"> {new Date().getFullYear()} Himanshu Kaushik — crafted with ☕ & ❤️</p>
+          <p className="text-xs opacity-70"> {new Date().getFullYear()} Himanshu Kaushik — crafted with ☕ & ❤️</p>
         </div>
       </div>
     </footer>
