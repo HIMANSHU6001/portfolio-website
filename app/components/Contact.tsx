@@ -3,7 +3,7 @@
 import type { ChangeEvent, FormEvent } from "react";
 import { useState } from "react";
 import { ArrowRight, RocketLaunch, Star } from "./Illustrations";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFileAlt, FaDownload } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import toast from "react-hot-toast";
 
@@ -140,6 +140,27 @@ export default function Contact() {
                 </div>
                 <ArrowRight size={16} />
               </a>
+              <div className="flex gap-3 mt-1">
+                <a
+                  href="https://drive.google.com/file/d/1DL3TIduJWPW0BLjUOHrUO1hJkp3cwRTe/view?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="sticker-sm flex-1 bg-sun text-ink border-[3px] border-ink rounded-2xl px-3 py-3 font-bold flex items-center justify-center gap-2 hover:-translate-y-0.5 transition-transform"
+                >
+                  <FaFileAlt size={16} />
+                  <span className="text-sm">View Resume</span>
+                </a>
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1DL3TIduJWPW0BLjUOHrUO1hJkp3cwRTe"
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="sticker-sm flex-1 bg-baby-blue text-ink border-[3px] border-ink rounded-2xl px-3 py-3 font-bold flex items-center justify-center gap-2 hover:-translate-y-0.5 transition-transform"
+                >
+                  <FaDownload size={14} />
+                  <span className="text-sm">Download</span>
+                </a>
+              </div>
             </div>
 
             <div className="absolute -top-6 -left-35 rotate-[25deg] hidden md:block">
@@ -170,7 +191,7 @@ export default function Contact() {
               name="email"
               value={form.email}
               onChange={onChange}
-              placeholder="jhon@compute.co"
+              placeholder="jhon@mail.co"
               className="w-full bg-cream border-[3px] border-ink rounded-xl px-4 py-3 font-semibold outline-none focus:shadow-[4px_4px_0_0_var(--pink)] transition-shadow mb-5"
             />
 
