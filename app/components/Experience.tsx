@@ -48,6 +48,17 @@ const timeline: TimelineItem[] = [
   },
   {
     role: "Software Engineer Intern",
+    company: "Lamatic",
+    period: "Present",
+    place: "Remote",
+    color: "var(--paper)",
+    points: [
+      "Engineer at Lamatic.ai, working across the stack on an AI workflow platform — from edge APIs and data pipelines to the product surfaces built on top of them.",
+      "Focused on shipping features that stay simple to use and reliable under load."
+    ],
+  },
+  {
+    role: "Software Engineer Intern",
     company: "Atlan",
     period: "Nov 2025 — Feb 2026",
     place: "Remote",
