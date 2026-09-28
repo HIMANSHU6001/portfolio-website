@@ -53,8 +53,8 @@ const timeline: TimelineItem[] = [
     place: "Remote",
     color: "var(--paper)",
     points: [
-      "Building product features across the frontend stack with a focus on clean UX and reliable performance.",
-      "Collaborating closely with product and engineering to ship polished, maintainable experiences."
+      "Engineer at Lamatic.ai, working across the stack on an AI workflow platform — from edge APIs and data pipelines to the product surfaces built on top of them.",
+      "Focused on shipping features that stay simple to use and reliable under load."
     ],
   },
   {
