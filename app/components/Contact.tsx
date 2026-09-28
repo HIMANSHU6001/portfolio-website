@@ -142,7 +142,7 @@ export default function Contact() {
               </a>
               <div className="flex gap-3 mt-1">
                 <a
-                  href="https://drive.google.com/file/d/1YEowWURXUeMRcbAYsbeY_7s1aKQTE2K_/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1oGse403wZh6njSsHgApO3BshFbnkkczO/view?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="sticker-sm flex-1 bg-sun text-ink border-[3px] border-ink rounded-2xl px-3 py-3 font-bold flex items-center justify-center gap-2 hover:-translate-y-0.5 transition-transform"
@@ -151,7 +151,7 @@ export default function Contact() {
                   <span className="text-sm">View Resume</span>
                 </a>
                 <a
-                  href="https://drive.google.com/uc?export=download&id=1YEowWURXUeMRcbAYsbeY_7s1aKQTE2K_"
+                  href="https://drive.google.com/uc?export=download&id=1oGse403wZh6njSsHgApO3BshFbnkkczO"
                   download
                   target="_blank"
                   rel="noopener noreferrer"
